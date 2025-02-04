@@ -1,6 +1,15 @@
+
 const projects = [
-  { title: "AI Chatbot", description: "Built a chatbot using OpenAI's GPT-4.", link: "#" },
-  { title: "Compliance Dashboard", description: "Automated risk reporting using ML.", link: "#" },
+  {
+    title: "RAG System Optimization",
+    description: "Improved information retrieval efficiency by 30%.",
+    link: "#",
+  },
+  {
+    title: "Generative AI for Compliance",
+    description: "Processed multi-column documents with 90% accuracy.",
+    link: "#",
+  },
 ];
 
 export default function Projects() {
@@ -9,9 +18,9 @@ export default function Projects() {
       <h2 className="text-2xl font-bold">Projects</h2>
       <div className="mt-4 grid gap-4">
         {projects.map((project, index) => (
-          <a 
-            key={index} 
-            href={project.link} 
+          <a
+            key={index}
+            href={project.link}
             className="p-4 border rounded-lg hover:bg-gray-50 transition"
           >
             <h3 className="font-semibold">{project.title}</h3>
