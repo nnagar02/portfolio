@@ -1,0 +1,24 @@
+const projects = [
+  { title: "AI Chatbot", description: "Built a chatbot using OpenAI's GPT-4.", link: "#" },
+  { title: "Compliance Dashboard", description: "Automated risk reporting using ML.", link: "#" },
+];
+
+export default function Projects() {
+  return (
+    <section className="mt-12">
+      <h2 className="text-2xl font-bold">Projects</h2>
+      <div className="mt-4 grid gap-4">
+        {projects.map((project, index) => (
+          <a 
+            key={index} 
+            href={project.link} 
+            className="p-4 border rounded-lg hover:bg-gray-50 transition"
+          >
+            <h3 className="font-semibold">{project.title}</h3>
+            <p className="text-gray-600">{project.description}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+}
